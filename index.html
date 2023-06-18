@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+        <title>Currently Listening To...</title>
+        <script src="src/script.ts" type="module"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    </head>
+    <body>
+      <section id="heading">
+        <span id="avatar"></span>
+        <h1>
+          <span id="displayName"></span>'s Spotify:
+        </h1>
+      </section>
+
+      <section id="playingInfo">
+        <div class="pure-g">
+          <div class="pure-u-4-24"></div>
+          <div class="pure-u-8-24">
+
+          </div>
+          <div class="pure-u-12-24">
+            <ul>
+              <li>Artist: <span id="artist"></span></li>
+              <li>Album: <span id="album"></span></li>
+              <li>Song: <a id="song" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="pure-u-4-24"></div>
+        </div>
+      </section>
+
+      <section id="current">
+        <span id="albumCover"></span>
+
+      </section>
+    </body>
+</html>
