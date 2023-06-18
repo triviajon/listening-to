@@ -19,12 +19,12 @@ if (!code) {
         accessToken = await refreshAccessToken(accessToken, clientId);
         console.log("Successfully refreshed access token.");
     }, 3600 * MILLISECONDS);
-
+    
     setInterval(async () => {
         const profile = await fetchProfile(accessToken);
         const currentListening = await fetchCurrentlyListening(accessToken);
 
         populateUI(profile, currentListening);
         console.log("Successfully repopulated UI.");
-    }, 5 * MILLISECONDS);
+    }, 2 * MILLISECONDS);
 }
